@@ -1,0 +1,39 @@
+.wrapper {
+  height: 95%;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding-right: 10px;
+  }
+
+  .price {
+    align-self: flex-end;
+    font-size: 22px;
+    margin-top: 16px;
+  }
+
+  .buy {
+    align-self: flex-end;
+    margin-top: 12px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    outline: none;
+    background-color: #d7d7d7;
+    border: 1px solid #9b9b9b;
+    border-radius: 2px;
+    text-transform: uppercase;
+
+    &:disabled {
+      cursor: auto;
+    }
+  }
+}
